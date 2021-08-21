@@ -59,9 +59,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
   [0] = LAYOUT_moonlander(
     DE_CIRC,        KC_1,           KC_2,           KC_3,           KC_4,           KC_5,           DE_LBRC,                                        DE_RBRC,        KC_6,           KC_7,           KC_8,           KC_9,           KC_0,           DE_SS,          
     KC_DELETE,      KC_Q,           KC_W,           KC_E,           KC_R,           KC_T,           DE_LCBR,                                        DE_RCBR,        DE_Z,           KC_U,           KC_I,           KC_O,           KC_P,           DE_UE,          
-    DE_PLUS,        KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           DE_LPRN,                                                                        DE_RPRN,        KC_H,           KC_J,           KC_K,           KC_L,           LT(2,DE_OE),    DE_AE,          
+    KC_BSPACE,      KC_A,           KC_S,           KC_D,           KC_F,           KC_G,           DE_LPRN,                                                                        DE_RPRN,        KC_H,           KC_J,           KC_K,           KC_L,           LT(2,DE_OE),    DE_AE,          
     KC_LSHIFT,      LCTL_T(DE_Y),   KC_X,           KC_C,           KC_V,           KC_B,                                           KC_N,           KC_M,           KC_COMMA,       KC_DOT,         RCTL_T(DE_MINS),KC_RSHIFT,      
-    MO(1),          WEBUSB_PAIR,    LALT(KC_LSHIFT),KC_LEFT,        KC_RIGHT,       LALT_T(KC_APPLICATION),                                                                                                LCTL_T(KC_ESCAPE),KC_UP,          KC_DOWN,        DE_LESS,        DE_HASH,        MO(1),          
+    MO(1),          WEBUSB_PAIR,    LALT(KC_LSHIFT),KC_LEFT,        KC_RIGHT,       LALT_T(KC_APPLICATION),                                                                                                LCTL_T(KC_ESCAPE),KC_UP,          KC_DOWN,        KC_TRANSPARENT, DE_HASH,        MO(1),          
     KC_SPACE,       KC_BSPACE,      TD(DANCE_0),                    KC_RALT,        KC_TAB,         KC_ENTER
   ),
   [1] = LAYOUT_moonlander(
@@ -73,7 +73,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     RGB_VAD,        RGB_VAI,        TOGGLE_LAYER_COLOR,                RGB_SLD,        RGB_HUD,        RGB_HUI
   ),
   [2] = LAYOUT_moonlander(
-    AU_TOG,         KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, RESET,          
+    AU_TOG,         TO(1),          KC_TRANSPARENT, TO(3),          TO(4),          KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, TO(0),          RESET,          
     MU_TOG,         KC_TRANSPARENT, KC_TRANSPARENT, KC_MS_UP,       KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT,                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, 
     MU_MOD,         KC_TRANSPARENT, KC_MS_LEFT,     KC_MS_DOWN,     KC_MS_RIGHT,    KC_MS_WH_UP,    KC_TRANSPARENT,                                                                 KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_MEDIA_PLAY_PAUSE,
     KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_TRANSPARENT, KC_MS_WH_DOWN,                                  KC_TRANSPARENT, KC_TRANSPARENT, KC_MEDIA_PREV_TRACK,KC_MEDIA_NEXT_TRACK,KC_TRANSPARENT, KC_TRANSPARENT, 
